@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #14213d;
+}
+
+#form {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  border: 1px solid #fca311;
+  gap: 10px;
+  padding: 50px;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  font-size: 2em;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #ccc;
+  border-bottom: 1px solid #fca311;
+  line-height: 1.5em;
+  cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="text"]:active {
+  outline: none;
+  background-color: #14213d;
+  color: #fca311;
+}
+
+input[type="submit"] {
+  margin: 0 auto;
+  background-color: #14213d;
+  font-size: 1.5em;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+  width: 60%;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #fca311;
+  color: #ccc;
+  transition: ease-out 0.4s;
+}
+
+input[type="submit"]:hover {
+  letter-spacing: 0.5em;
+  transition: 0.2s ease-in-out;
+  background-color: #fca311;
+  color: #fff;
+  border: 1px solid #fca311;
+}
+
+.wrapper {
+  background: #fca311;
+  border-radius: 20px;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 40%;
+  margin-top: 10%;
+  padding: 100px;
+}
+
+.city {
+  width: 100%;
+  background-color: #e5e5e5;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  color: #fca311;
+}
+
+.search {
+  color: #000;
+  font-weight: 3em;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+}
+
+.content {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* /////////////////////////////////// */
+
+.weather-wrap {
+  height: 300px;
+  padding: 10px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.weather-content {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: bold;
+  max-width: 450px;
+  max-height: 264px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fca311;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background-image: url(img/weather.gif);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+}
+
+.weather-card {
+  font-family: "Montserrat Alternates", sans-serif;
+  background-color: rgba(94, 91, 91, 0.2);
+  text-align: center;
+  line-height: 1.3;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 450px;
+  color: #fca311;
+}
+
+.close {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  border-top-right-radius: 20px;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  font-size: 1em;
+  background: rgba(0, 0, 0, 0);
+}
+
+sup,
+.weather-icon,
+.country,
+.temperature,
+.weather-description,
+.wind-speed,
+.humidity {
+  background: rgba(0, 0, 0, 0);
+}
+
+.weather-icon img {
+  color: red;
+  height: 50px;
+  width: 50px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.rain {
+  background-image: url(img/rain.gif);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.thunderstorm {
+  background-image: url(img/thunderstorm.gif);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.clearsky {
+  background-image: url(img/clearsky.gif);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.clouds {
+  background-image: url(img/clouds.gif);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.nightsky {
+  background-image: url(img/nightsky.gif);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.fog {
+  background-image: url(img/fog.gif);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.snow {
+  background-image: url(img/snow.gif);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.hide {
+  display: none;
+}
+
+/* ///////////////////////////////////////////////// */
+
+@media all and (max-width: 500px) {
+  .weather-card {
+    padding: 0;
+  }
+
+  #form {
+    margin: 0;
+    gap: 5px;
+    padding: 0;
+  }
+
+  input[type="text"] {
+    font-size: 1em;
+  }
+
+  input[type="submit"]:hover {
+    letter-spacing: 0.15em;
+  }
+
+  #search-btn {
+    margin-bottom: 5px;
+  }
+}
